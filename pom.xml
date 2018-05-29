@@ -378,12 +378,12 @@
                                 <groupId>com.wakaleo.gameoflife</groupId>
                                 <artifactId>gameoflife-build</artifactId>
                                 <version>${project.version}</version>
-                                <eclusions>
+                                <exclusions>
                                        <exclusion>
             							<groupId>org.slf4j</groupId>
             							<artifactId>slf4j-simple</artifactId>
             						</exclusion>
-            					</eclusions>
+            					</exclusions>
                             </dependency>
                      
                         </dependencies>
