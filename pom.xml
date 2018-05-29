@@ -183,6 +183,12 @@
                 <artifactId>easyb-core</artifactId>
                 <version>${easyb.version}</version>
                 <scope>test</scope>
+               
+                  <exclusion>
+            							<groupId>org.slf4j</groupId>
+            							<artifactId>slf4j-simple</artifactId>
+            						</exclusion>
+            					
             </dependency>
         </dependencies>
     </dependencyManagement>
