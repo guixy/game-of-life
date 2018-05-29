@@ -173,6 +173,10 @@
                 <artifactId>wagon-webdav-jackrabbit</artifactId>
                 <version>2.2</version>
             </extension>
+             <exclusion>
+            	<groupId>org.slf4j</groupId>
+            	<artifactId>slf4j-simple</artifactId>
+            </exclusion>
         </extensions>
     </build>
     <dependencyManagement>
@@ -203,10 +207,7 @@
             <artifactId>mockito-all</artifactId>
             <version>1.9.0</version>
             <scope>test</scope>
-            <exclusion>
-            	<groupId>org.slf4j</groupId>
-            	<artifactId>slf4j-simple</artifactId>
-            </exclusion>
+           
         </dependency>
         
     </dependencies>
