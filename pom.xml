@@ -341,6 +341,12 @@
                                     <groupId>org.codehaus.mojo</groupId>
                                     <artifactId>findbugs-maven-plugin</artifactId>
                                     <version>2.4.0</version>
+                                    <exclusions>
+                                       <exclusion>
+            							<groupId>org.slf4j</groupId>
+            							<artifactId>slf4j-simple</artifactId>
+            						</exclusion>
+            					</exclusions>
                                     <configuration>
                                         <effort>Max</effort>
                                         <xmlOutput>true</xmlOutput>
@@ -378,12 +384,7 @@
                                 <groupId>com.wakaleo.gameoflife</groupId>
                                 <artifactId>gameoflife-build</artifactId>
                                 <version>${project.version}</version>
-                                <exclusions>
-                                       <exclusion>
-            							<groupId>org.slf4j</groupId>
-            							<artifactId>slf4j-simple</artifactId>
-            						</exclusion>
-            					</exclusions>
+                                
                             </dependency>
                      
                         </dependencies>
