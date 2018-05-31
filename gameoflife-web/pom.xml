@@ -166,19 +166,21 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>1.6.1</version>
+            <executions>
             <exclusion>
                 <groupId>qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-            </exclusion>
+            </exclusion></executions>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.6.1</version>
+            <executions>
             <exclusion>
                 <groupId>qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-            </exclusion>
+            </exclusion></executions>
         </dependency>
 
 
